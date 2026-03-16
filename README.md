@@ -1,0 +1,2 @@
+# smtdown-privacy
+Privacy Policy
