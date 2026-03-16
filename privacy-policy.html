@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmtDown – Política de Privacidade</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.7; }
+    h1 { color: #1a73e8; }
+    h2 { color: #444; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+    p { margin: 10px 0; }
+    footer { margin-top: 40px; font-size: 0.85em; color: #666; }
+  </style>
+</head>
+<body>
+
+<h1>SmtDown – Política de Privacidade</h1>
+<p><em>Última atualização: março de 2026</em></p>
+
+<h2>1. Sobre o Aplicativo</h2>
+<p>
+  SmtDown é um aplicativo de distribuição de arquivos por código de acesso.
+  Ele permite que usuários autorizados baixem arquivos (como APKs) a partir de
+  um servidor privado, mediante apresentação de um código válido.
+</p>
+
+<h2>2. Dados Coletados</h2>
+<p>O SmtDown <strong>não coleta, armazena nem compartilha</strong> dados pessoais dos usuários.</p>
+<ul>
+  <li><strong>Código de acesso:</strong> inserido pelo usuário, enviado ao servidor apenas para validação. Não é armazenado em servidores de terceiros.</li>
+  <li><strong>URL do servidor:</strong> configurada pelo usuário e armazenada localmente no dispositivo com criptografia (EncryptedSharedPreferences).</li>
+  <li><strong>Token de sessão (JWT):</strong> gerado pelo servidor após autenticação do código, armazenado localmente com criptografia e nunca transmitido para terceiros.</li>
+</ul>
+
+<h2>3. Dados NÃO Coletados</h2>
+<p>O aplicativo <strong>não coleta</strong>:</p>
+<ul>
+  <li>Nome, endereço ou dados de identificação pessoal</li>
+  <li>E-mail ou número de telefone</li>
+  <li>Localização geográfica</li>
+  <li>Dados de uso ou análise (analytics)</li>
+  <li>Dados de câmera, microfone ou contatos</li>
+</ul>
+
+<h2>4. Permissões Utilizadas</h2>
+<ul>
+  <li><strong>INTERNET:</strong> necessária para comunicação com o servidor de download.</li>
+  <li><strong>REQUEST_INSTALL_PACKAGES:</strong> necessária para instalar APKs baixados pelo aplicativo (apenas Android 8+).</li>
+  <li><strong>WRITE/READ_EXTERNAL_STORAGE:</strong> necessária para salvar arquivos baixados no armazenamento do dispositivo (apenas Android ≤ 9).</li>
+  <li><strong>POST_NOTIFICATIONS:</strong> usada para exibir progresso de download em segundo plano (apenas Android 13+).</li>
+</ul>
+
+<h2>5. Compartilhamento de Dados</h2>
+<p>
+  O SmtDown não compartilha qualquer dado com terceiros, anunciantes ou serviços de análise.
+  A única comunicação de rede ocorre diretamente entre o aplicativo e o servidor configurado pelo usuário.
+</p>
+
+<h2>6. Segurança</h2>
+<p>
+  Todos os dados de configuração (URL do servidor e token de autenticação) são armazenados
+  localmente usando <em>EncryptedSharedPreferences</em> com criptografia AES-256, respaldada
+  pelo Android Keystore.
+</p>
+
+<h2>7. Menores de Idade</h2>
+<p>
+  O SmtDown não é direcionado a menores de 13 anos e não coleta dados de crianças.
+</p>
+
+<h2>8. Alterações nesta Política</h2>
+<p>
+  Qualquer atualização desta política será publicada nesta página.
+  O uso contínuo do aplicativo após modificações indica aceitação da política revisada.
+</p>
+
+<h2>9. Contato</h2>
+<p>
+  Para dúvidas sobre esta política de privacidade, entre em contato:
+  <a href="mailto:suporte@play.task-hub.com">suporte@play.task-hub.com</a>
+</p>
+
+<footer>
+  © 2026 SmtDown. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
